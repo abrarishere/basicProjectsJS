@@ -1,0 +1,96 @@
+:root{
+  --primary-color: #f1f1f1;
+  --secondary-color: #333;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main{
+  width: 400px;
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.add input{
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px 0 0 5px;
+}
+
+.add button{
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 5px;
+}
+
+li button{
+  padding: 5px 10px;
+  background-color: #f00;
+  color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+li button:hover{
+  background-color: #f55;
+}
+
+li.done{
+  text-decoration: line-through;
+}
+
